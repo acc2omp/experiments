@@ -1,0 +1,183 @@
+OPENACC langOpts enabled!!!
+I AM OPENACC! THIS IS WHERE WE HANDLE THE PRAGMA
+Generating tokens for OPENACC annotation:
+LexTok(identifier)
+LexTok(for)
+LexTok(eod)
+Pragma token size is: 4
+ [annot_pragma_openacc_end] [for] [identifier] [annot_pragma_openacc]
+Passed tokens into PP.EnterTokenStream()
+<DEBUG>(ParseStatementOrDeclaration): Res =0x47fbb80
+Entering function ParseOpenACCDeclarativeOrExecutableDirective()
+Directive Kind is: parallel for
+<DEBUG>(ParseStatementOrDeclaration): Res =0x47fc0e0
+<DEBUG>(ParseStatementOrDeclaration): Res =0x47fc0f0
+Creating action 'ActOnOpenACCParallelForDirective'. PtrTy =0x4825e88
+<DEBUG>(ParseStatementOrDeclaration): Res =0x4825e88
+<DEBUG>(ParseStatementOrDeclaration): Res =0x4825f80
+TranslationUnitDecl 0x47a2aa8 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x47a3080 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x47a2d40 '__int128'
+|-TypedefDecl 0x47a30e8 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x47a2d60 'unsigned __int128'
+|-TypedefDecl 0x47a3428 <<invalid sloc>> <invalid sloc> implicit __NSConstantString '__NSConstantString_tag'
+| `-RecordType 0x47a31d0 '__NSConstantString_tag'
+|   `-CXXRecord 0x47a3138 '__NSConstantString_tag'
+|-TypedefDecl 0x47a34c0 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x47a3480 'char *'
+|   `-BuiltinType 0x47a2b40 'char'
+|-TypedefDecl 0x47fb948 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list '__va_list_tag [1]'
+| `-ConstantArrayType 0x47fb8f0 '__va_list_tag [1]' 1 
+|   `-RecordType 0x47a35b0 '__va_list_tag'
+|     `-CXXRecord 0x47a3510 '__va_list_tag'
+`-FunctionDecl 0x47fb9f8 <prog.cpp:2:1, line:9:1> line:2:5 main 'int ()'
+  `-CompoundStmt 0x4825f98 <col:11, line:9:1>
+    |-DeclStmt 0x47fbb80 <line:3:5, col:10>
+    | `-VarDecl 0x47fbb20 <col:5, col:9> col:9 used i 'int'
+    |-ACCParallelForDirective 0x4825e88 <line:5:9, col:26>
+    | |-CapturedStmt 0x47fc128 <line:6:5, line:7:9>
+    | | |-CapturedDecl 0x47fbd30 <<invalid sloc>> <invalid sloc>
+    | | | |-ForStmt 0x47fc0f0 <line:6:5, line:7:9>
+    | | | | |-BinaryOperator 0x47fbfe8 <line:6:9, col:13> 'int' lvalue '='
+    | | | | | |-DeclRefExpr 0x47fbf18 <col:9> 'int' lvalue Var 0x47fbb20 'i' 'int'
+    | | | | | `-IntegerLiteral 0x47fbfc8 <col:13> 'int' 0
+    | | | | |-<<<NULL>>>
+    | | | | |-BinaryOperator 0x47fc070 <col:16, col:18> 'bool' '<'
+    | | | | | |-ImplicitCastExpr 0x47fc058 <col:16> 'int' <LValueToRValue>
+    | | | | | | `-DeclRefExpr 0x47fc010 <col:16> 'int' lvalue Var 0x47fbb20 'i' 'int'
+    | | | | | `-IntegerLiteral 0x47fc038 <col:18> 'int' 10
+    | | | | |-UnaryOperator 0x47fc0c0 <col:22, col:23> 'int' postfix '++'
+    | | | | | `-DeclRefExpr 0x47fc098 <col:22> 'int' lvalue Var 0x47fbb20 'i' 'int'
+    | | | | `-NullStmt 0x47fc0e0 <line:7:9>
+    | | | |-ImplicitParamDecl 0x47fbd98 <line:5:9> col:9 implicit .global_tid. 'int *const __restrict'
+    | | | |-ImplicitParamDecl 0x47fbdf8 <col:9> col:9 implicit .bound_tid. 'int *const __restrict'
+    | | | `-ImplicitParamDecl 0x47fbe88 <col:9> col:9 implicit __context '(anonymous struct at prog.cpp:5:9) *'
+    | | `-DeclRefExpr 0x47fbfa0 <line:6:9> 'int' lvalue Var 0x47fbb20 'i' 'int'
+    | |-DeclRefExpr 0x47fc7b8 <col:9> 'int' lvalue Var 0x47fc758 '.acc.iv' 'int'
+    | |-BinaryOperator 0x47fc388 <col:5, <invalid sloc>> 'int' '-'
+    | | |-BinaryOperator 0x47fc260 <col:5, col:22> 'int' '/'
+    | | | |-ParenExpr 0x47fc240 <col:5> 'int'
+    | | | | `-BinaryOperator 0x47fc218 <col:18, col:22> 'int' '+'
+    | | | |   |-BinaryOperator 0x47fc1f0 <col:18, <invalid sloc>> 'int' '-'
+    | | | |   | |-BinaryOperator 0x47fc1a8 <col:18, col:13> 'int' '-'
+    | | | |   | | |-IntegerLiteral 0x47fc038 <col:18> 'int' 10
+    | | | |   | | `-IntegerLiteral 0x47fbfc8 <col:13> 'int' 0
+    | | | |   | `-IntegerLiteral 0x47fc1d0 <<invalid sloc>> 'int' 1
+    | | | |   `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    | | | `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    | | `-IntegerLiteral 0x47fc368 <<invalid sloc>> 'int' 1
+    | |-<<<NULL>>>
+    | |-BinaryOperator 0x47fc180 <col:13, col:18> 'bool' '<'
+    | | |-IntegerLiteral 0x47fbfc8 <col:13> 'int' 0
+    | | `-IntegerLiteral 0x47fc038 <col:18> 'int' 10
+    | |-BinaryOperator 0x47fc850 <col:9> 'bool' '<='
+    | | |-ImplicitCastExpr 0x47fc820 <col:9> 'int' <LValueToRValue>
+    | | | `-DeclRefExpr 0x47fc7b8 <col:9> 'int' lvalue Var 0x47fc758 '.acc.iv' 'int'
+    | | `-ImplicitCastExpr 0x47fc838 <col:9> 'int' <LValueToRValue>
+    | |   `-DeclRefExpr 0x47fc4e8 <col:9> 'int' lvalue Var 0x47fc488 '.acc.ub' 'int'
+    | |-BinaryOperator 0x47fc7f8 <col:9> 'int' lvalue '='
+    | | |-DeclRefExpr 0x47fc7b8 <col:9> 'int' lvalue Var 0x47fc758 '.acc.iv' 'int'
+    | | `-ImplicitCastExpr 0x47fc7e0 <col:9> 'int' <LValueToRValue>
+    | |   `-DeclRefExpr 0x47fc428 <col:9> 'int' lvalue Var 0x47fc3c8 '.acc.lb' 'int'
+    | |-BinaryOperator 0x4825bb0 <col:9, col:5> 'int' lvalue '='
+    | | |-DeclRefExpr 0x47fc7b8 <col:9> 'int' lvalue Var 0x47fc758 '.acc.iv' 'int'
+    | | `-BinaryOperator 0x47fc8b0 <col:9, col:5> 'int' '+'
+    | |   |-ImplicitCastExpr 0x47fc898 <col:9> 'int' <LValueToRValue>
+    | |   | `-DeclRefExpr 0x47fc7b8 <col:9> 'int' lvalue Var 0x47fc758 '.acc.iv' 'int'
+    | |   `-IntegerLiteral 0x47fc878 <col:5> 'int' 1
+    | |-<<<NULL>>>
+    | |-DeclRefExpr 0x47fc588 <col:9> 'int' lvalue Var 0x47fc528 '.acc.is_last' 'int'
+    | |-DeclRefExpr 0x47fc428 <col:9> 'int' lvalue Var 0x47fc3c8 '.acc.lb' 'int'
+    | |-DeclRefExpr 0x47fc4e8 <col:9> 'int' lvalue Var 0x47fc488 '.acc.ub' 'int'
+    | |-DeclRefExpr 0x47fc648 <col:9> 'int' lvalue Var 0x47fc5e8 '.acc.stride' 'int'
+    | |-BinaryOperator 0x47fc718 <col:9> 'int' lvalue '='
+    | | |-DeclRefExpr 0x47fc4e8 <col:9> 'int' lvalue Var 0x47fc488 '.acc.ub' 'int'
+    | | `-ConditionalOperator 0x47fc6e8 <col:9> 'int'
+    | |   |-BinaryOperator 0x47fc6a8 <col:9, <invalid sloc>> 'bool' '>'
+    | |   | |-ImplicitCastExpr 0x47fc690 <col:9> 'int' <LValueToRValue>
+    | |   | | `-DeclRefExpr 0x47fc4e8 <col:9> 'int' lvalue Var 0x47fc488 '.acc.ub' 'int'
+    | |   | `-BinaryOperator 0x47fc388 <col:5, <invalid sloc>> 'int' '-'
+    | |   |   |-BinaryOperator 0x47fc260 <col:5, col:22> 'int' '/'
+    | |   |   | |-ParenExpr 0x47fc240 <col:5> 'int'
+    | |   |   | | `-BinaryOperator 0x47fc218 <col:18, col:22> 'int' '+'
+    | |   |   | |   |-BinaryOperator 0x47fc1f0 <col:18, <invalid sloc>> 'int' '-'
+    | |   |   | |   | |-BinaryOperator 0x47fc1a8 <col:18, col:13> 'int' '-'
+    | |   |   | |   | | |-IntegerLiteral 0x47fc038 <col:18> 'int' 10
+    | |   |   | |   | | `-IntegerLiteral 0x47fbfc8 <col:13> 'int' 0
+    | |   |   | |   | `-IntegerLiteral 0x47fc1d0 <<invalid sloc>> 'int' 1
+    | |   |   | |   `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    | |   |   | `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    | |   |   `-IntegerLiteral 0x47fc368 <<invalid sloc>> 'int' 1
+    | |   |-BinaryOperator 0x47fc388 <col:5, <invalid sloc>> 'int' '-'
+    | |   | |-BinaryOperator 0x47fc260 <col:5, col:22> 'int' '/'
+    | |   | | |-ParenExpr 0x47fc240 <col:5> 'int'
+    | |   | | | `-BinaryOperator 0x47fc218 <col:18, col:22> 'int' '+'
+    | |   | | |   |-BinaryOperator 0x47fc1f0 <col:18, <invalid sloc>> 'int' '-'
+    | |   | | |   | |-BinaryOperator 0x47fc1a8 <col:18, col:13> 'int' '-'
+    | |   | | |   | | |-IntegerLiteral 0x47fc038 <col:18> 'int' 10
+    | |   | | |   | | `-IntegerLiteral 0x47fbfc8 <col:13> 'int' 0
+    | |   | | |   | `-IntegerLiteral 0x47fc1d0 <<invalid sloc>> 'int' 1
+    | |   | | |   `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    | |   | | `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    | |   | `-IntegerLiteral 0x47fc368 <<invalid sloc>> 'int' 1
+    | |   `-ImplicitCastExpr 0x47fc6d0 <col:9> 'int' <LValueToRValue>
+    | |     `-DeclRefExpr 0x47fc4e8 <col:9> 'int' lvalue Var 0x47fc488 '.acc.ub' 'int'
+    | |-BinaryOperator 0x4825c30 <col:9> 'int' lvalue '='
+    | | |-DeclRefExpr 0x47fc428 <col:9> 'int' lvalue Var 0x47fc3c8 '.acc.lb' 'int'
+    | | `-BinaryOperator 0x4825c08 <col:9> 'int' '+'
+    | |   |-ImplicitCastExpr 0x4825bd8 <col:9> 'int' <LValueToRValue>
+    | |   | `-DeclRefExpr 0x47fc428 <col:9> 'int' lvalue Var 0x47fc3c8 '.acc.lb' 'int'
+    | |   `-ImplicitCastExpr 0x4825bf0 <col:9> 'int' <LValueToRValue>
+    | |     `-DeclRefExpr 0x47fc648 <col:9> 'int' lvalue Var 0x47fc5e8 '.acc.stride' 'int'
+    | |-BinaryOperator 0x4825cb0 <col:9> 'int' lvalue '='
+    | | |-DeclRefExpr 0x47fc4e8 <col:9> 'int' lvalue Var 0x47fc488 '.acc.ub' 'int'
+    | | `-BinaryOperator 0x4825c88 <col:9> 'int' '+'
+    | |   |-ImplicitCastExpr 0x4825c58 <col:9> 'int' <LValueToRValue>
+    | |   | `-DeclRefExpr 0x47fc4e8 <col:9> 'int' lvalue Var 0x47fc488 '.acc.ub' 'int'
+    | |   `-ImplicitCastExpr 0x4825c70 <col:9> 'int' <LValueToRValue>
+    | |     `-DeclRefExpr 0x47fc648 <col:9> 'int' lvalue Var 0x47fc5e8 '.acc.stride' 'int'
+    | |-BinaryOperator 0x47fc260 <col:5, col:22> 'int' '/'
+    | | |-ParenExpr 0x47fc240 <col:5> 'int'
+    | | | `-BinaryOperator 0x47fc218 <col:18, col:22> 'int' '+'
+    | | |   |-BinaryOperator 0x47fc1f0 <col:18, <invalid sloc>> 'int' '-'
+    | | |   | |-BinaryOperator 0x47fc1a8 <col:18, col:13> 'int' '-'
+    | | |   | | |-IntegerLiteral 0x47fc038 <col:18> 'int' 10
+    | | |   | | `-IntegerLiteral 0x47fbfc8 <col:13> 'int' 0
+    | | |   | `-IntegerLiteral 0x47fc1d0 <<invalid sloc>> 'int' 1
+    | | |   `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    | | `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    | |-DeclRefExpr 0x47fc288 <col:5> 'int' lvalue Var 0x47fbb20 'i' 'int'
+    | |-DeclRefExpr 0x47fc328 <col:5> 'int' lvalue Var 0x47fc2c8 'i' 'int'
+    | |-BinaryOperator 0x4825d00 <col:5, col:13> 'int' lvalue '='
+    | | |-DeclRefExpr 0x4825cd8 <col:5> 'int' lvalue Var 0x47fbb20 'i' 'int'
+    | | `-IntegerLiteral 0x47fbfc8 <col:13> 'int' 0
+    | |-BinaryOperator 0x4825db0 <col:5, col:22> 'int' lvalue '='
+    | | |-DeclRefExpr 0x4825cd8 <col:5> 'int' lvalue Var 0x47fbb20 'i' 'int'
+    | | `-BinaryOperator 0x4825d88 <col:13, col:22> 'int' '+'
+    | |   |-IntegerLiteral 0x47fbfc8 <col:13> 'int' 0
+    | |   `-BinaryOperator 0x4825d60 <col:22> 'int' '*'
+    | |     |-ImplicitCastExpr 0x4825d48 <col:22> 'int' <LValueToRValue>
+    | |     | `-ParenExpr 0x4825d28 <col:22> 'int' lvalue
+    | |     |   `-DeclRefExpr 0x47fc7b8 <col:9> 'int' lvalue Var 0x47fc758 '.acc.iv' 'int'
+    | |     `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    | `-BinaryOperator 0x4825e48 <col:5, col:22> 'int' lvalue '='
+    |   |-DeclRefExpr 0x4825cd8 <col:5> 'int' lvalue Var 0x47fbb20 'i' 'int'
+    |   `-BinaryOperator 0x4825e20 <col:13, col:22> 'int' '+'
+    |     |-IntegerLiteral 0x47fbfc8 <col:13> 'int' 0
+    |     `-BinaryOperator 0x4825df8 <col:22> 'int' '*'
+    |       |-ParenExpr 0x4825dd8 <col:22> 'int'
+    |       | `-BinaryOperator 0x47fc260 <col:5, col:22> 'int' '/'
+    |       |   |-ParenExpr 0x47fc240 <col:5> 'int'
+    |       |   | `-BinaryOperator 0x47fc218 <col:18, col:22> 'int' '+'
+    |       |   |   |-BinaryOperator 0x47fc1f0 <col:18, <invalid sloc>> 'int' '-'
+    |       |   |   | |-BinaryOperator 0x47fc1a8 <col:18, col:13> 'int' '-'
+    |       |   |   | | |-IntegerLiteral 0x47fc038 <col:18> 'int' 10
+    |       |   |   | | `-IntegerLiteral 0x47fbfc8 <col:13> 'int' 0
+    |       |   |   | `-IntegerLiteral 0x47fc1d0 <<invalid sloc>> 'int' 1
+    |       |   |   `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    |       |   `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    |       `-IntegerLiteral 0x47fc160 <col:22> 'int' 1
+    `-ReturnStmt 0x4825f80 <line:8:5, col:12>
+      `-IntegerLiteral 0x4825f60 <col:12> 'int' 0
+/usr/bin/ld: cannot find /tmp/prog-7693ff.o: No such file or directory
+clang-7.0: error: linker command failed with exit code 1 (use -v to see invocation)
