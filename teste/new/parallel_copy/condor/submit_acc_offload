@@ -1,0 +1,9 @@
+should_transfer_files = YES
+requirements = ((Machine == "n18.lsc.ic.unicamp.br"))
+Universe   = vanilla
+Executable = ../acc_off.exe
+Arguments  =
+Log        = condor_acc_off.log
+Output     = condor_acc_off.out
+Error      = condor_acc_off.error
+Queue

@@ -1,0 +1,9 @@
+should_transfer_files = YES
+requirements = ((Machine == "n18.lsc.ic.unicamp.br"))
+Universe   = vanilla
+Executable = cuda_path_script.sh
+Arguments  =
+Log        = condor_cuda_path.log
+Output     = condor_cuda_path.out
+Error      = condor_cuda_path.error
+Queue

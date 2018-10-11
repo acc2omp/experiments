@@ -1,0 +1,9 @@
+should_transfer_files = YES
+requirements = ((Machine == "n18.lsc.ic.unicamp.br"))
+Universe   = vanilla
+Executable = pgi_off.exe
+Arguments  =
+Log        = condor.log
+Output     = condor.out
+Error      = condor.error
+Queue
