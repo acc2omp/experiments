@@ -1,0 +1,9 @@
+should_transfer_files = YES
+requirements = ((Machine == "n18.lsc.ic.unicamp.br"))
+Universe   = vanilla
+Executable = ../fdtd-2d
+Arguments  =
+Log        = fdtd-2d_results/fdtd-2d.log
+Output     = fdtd-2d_results/fdtd-2d.out
+Error      = fdtd-2d_results/fdtd-2d.error
+Queue

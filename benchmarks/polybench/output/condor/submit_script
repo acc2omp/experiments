@@ -1,0 +1,9 @@
+condor_submit adi_condor
+condor_submit convolution-2d_condor
+condor_submit convolution-3d_condor
+condor_submit correlation_condor
+condor_submit covariance_condor
+condor_submit fdtd-2d_condor
+condor_submit floyd-warshall_condor
+condor_submit reg_detect_condor
+

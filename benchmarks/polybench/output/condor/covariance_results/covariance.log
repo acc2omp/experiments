@@ -1,0 +1,46 @@
+000 (040.000.000) 10/15 13:03:42 Job submitted from host: <10.68.254.3:15303?addrs=10.68.254.3-15303>
+...
+001 (040.000.000) 10/15 13:03:47 Job executing on host: <10.68.100.18:10440?addrs=10.68.100.18-10440>
+...
+006 (040.000.000) 10/15 13:03:51 Image size of job updated: 114196
+	1  -  MemoryUsage of job (MB)
+	4  -  ResidentSetSize of job (KB)
+...
+005 (040.000.000) 10/15 13:03:52 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	18344  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	18344  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       34       20  18642881
+	   Memory (MB)          :        1        1         1
+...
+000 (049.000.000) 10/15 13:04:56 Job submitted from host: <10.68.254.3:15303?addrs=10.68.254.3-15303>
+...
+001 (049.000.000) 10/15 13:05:16 Job executing on host: <10.68.100.18:10440?addrs=10.68.100.18-10440>
+...
+006 (049.000.000) 10/15 13:05:19 Image size of job updated: 136
+	1  -  MemoryUsage of job (MB)
+	136  -  ResidentSetSize of job (KB)
+...
+005 (049.000.000) 10/15 13:05:21 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	18344  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	18344  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       34       20  18642880
+	   Memory (MB)          :        1        1         1
+...

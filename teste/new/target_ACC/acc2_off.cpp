@@ -28,7 +28,7 @@ void vec_mult(int N) {
 
     init(v1,v2,N);
 
-    #pragma acc data copyin(v1, v2) copyout(p)
+    #pragma acc data copyin(v1[0:N], v2[0:N]) copyout(p[0:N])
     #pragma acc parallel loop
     for (i = 0; i < N; i++) {
         p[i] = v1[i] * v2[i];

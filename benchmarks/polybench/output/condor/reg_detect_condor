@@ -1,0 +1,9 @@
+should_transfer_files = YES
+requirements = ((Machine == "n18.lsc.ic.unicamp.br"))
+Universe   = vanilla
+Executable = ../reg_detect
+Arguments  =
+Log        = reg_detect_results/reg_detect.log
+Output     = reg_detect_results/reg_detect.out
+Error      = reg_detect_results/reg_detect.error
+Queue

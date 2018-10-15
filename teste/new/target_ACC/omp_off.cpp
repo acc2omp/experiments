@@ -1,5 +1,6 @@
 #include <stdio.h>
-#define VEC_SIZE 10000000
+#include <stdlib.h>
+#define VEC_SIZE 1000000
 
 void init(float* v1, float* v2, int N) {
     int i;
@@ -19,22 +20,24 @@ void output(float* p, int N) {
 
 void vec_mult(int N) {
     int i;
-    float p[N], v1[N], v2[N];
+    float *p, *v1, *v2;
+
+    p = (float*) malloc (N * (sizeof(float)));
+    v1 = (float*) malloc (N * (sizeof(float)));
+    v2 = (float*) malloc (N * (sizeof(float)));
 
     init(v1,v2,N);
 
-    #pragma omp target enter data map(alloc:p) map(to:v1,v2)
+    #pragma omp target data map(to:v1,v2) map(from:p)
     #pragma omp parallel for
     for (i = 0; i < N; i++) {
         p[i] = v1[i] * v2[i];
     }
 
     output(p,N);
-    #pragma omp target exit data map(delete:p, v1, v2)
 }
 
 int main(){
-
     vec_mult(VEC_SIZE);
 
     return 0;

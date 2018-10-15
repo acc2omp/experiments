@@ -1,0 +1,9 @@
+should_transfer_files = YES
+requirements = ((Machine == "n18.lsc.ic.unicamp.br"))
+Universe   = vanilla
+Executable = ../correlation
+Arguments  =
+Log        = results_correlation/correlation.log
+Output     = results_correlation/correlation.out
+Error      = results_correlation/correlation.error
+Queue

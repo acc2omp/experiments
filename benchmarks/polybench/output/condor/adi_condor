@@ -1,0 +1,9 @@
+should_transfer_files = YES
+requirements = ((Machine == "n18.lsc.ic.unicamp.br"))
+Universe   = vanilla
+Executable = ../adi
+Arguments  =
+Log        = adi_results/adi.log
+Output     = adi_results/adi.out
+Error      = adi_results/adi.error
+Queue

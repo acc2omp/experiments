@@ -1,0 +1,9 @@
+should_transfer_files = YES
+requirements = ((Machine == "n18.lsc.ic.unicamp.br"))
+Universe   = vanilla
+Executable = ../floyd-warshall
+Arguments  =
+Log        = floyd-warshall_results/floyd-warshall.log
+Output     = floyd-warshall_results/floyd-warshall.out
+Error      = floyd-warshall_results/floyd-warshall.error
+Queue

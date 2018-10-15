@@ -1,0 +1,46 @@
+000 (036.000.000) 10/15 13:03:41 Job submitted from host: <10.68.254.3:15303?addrs=10.68.254.3-15303>
+...
+001 (036.000.000) 10/15 13:03:47 Job executing on host: <10.68.100.18:10440?addrs=10.68.100.18-10440>
+...
+006 (036.000.000) 10/15 13:03:50 Image size of job updated: 123148
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+005 (036.000.000) 10/15 13:03:51 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	18328  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	18328  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       34       20  18642881
+	   Memory (MB)          :        0        1         1
+...
+000 (045.000.000) 10/15 13:04:53 Job submitted from host: <10.68.254.3:15303?addrs=10.68.254.3-15303>
+...
+001 (045.000.000) 10/15 13:04:55 Job executing on host: <10.68.100.18:10440?addrs=10.68.100.18-10440>
+...
+006 (045.000.000) 10/15 13:04:58 Image size of job updated: 60
+	1  -  MemoryUsage of job (MB)
+	60  -  ResidentSetSize of job (KB)
+...
+005 (045.000.000) 10/15 13:04:59 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:02, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:02, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	18328  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	18328  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       34       20  18642881
+	   Memory (MB)          :        1        1         1
+...

@@ -1,0 +1,9 @@
+should_transfer_files = YES
+requirements = ((Machine == "n18.lsc.ic.unicamp.br"))
+Universe   = vanilla
+Executable = ../convolution-3d
+Arguments  =
+Log        = convolution-3d_results/convolution-3d.log
+Output     = convolution-3d_results/convolution-3d.out
+Error      = convolution-3d_results/convolution-3d.error
+Queue

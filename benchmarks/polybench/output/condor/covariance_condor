@@ -1,0 +1,9 @@
+should_transfer_files = YES
+requirements = ((Machine == "n18.lsc.ic.unicamp.br"))
+Universe   = vanilla
+Executable = ../covariance
+Arguments  =
+Log        = covariance_results/covariance.log
+Output     = covariance_results/covariance.out
+Error      = covariance_results/covariance.error
+Queue

@@ -28,8 +28,8 @@ void vec_mult(int N) {
 
     init(v1,v2,N);
 
-    #pragma acc data copyin(v1, v2) copyout(p)
-    #pragma acc parallel loop
+    #pragma omp target data map(to:v1[0:N],v2[0:N]) map(from:p[0:N])
+    #pragma omp parallel for
     for (i = 0; i < N; i++) {
         p[i] = v1[i] * v2[i];
     }
